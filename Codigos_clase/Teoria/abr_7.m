@@ -8,7 +8,7 @@ A(2)= Link([0 0 0 -pi/2 0]);%th,d,a,alpha, tipo art; 0=rot 1=pris
 A(3)= Link([0 0 0 0 1]);
 A(3).qlim = [0 q3];
 diap37= SerialLink(A, 'name', 'Diap 37'); %Unir articulaciones
-clear q3
+clear
 l1=5
 syms q1 q2 q3
 AtB=trotz(q1)*transl(0,0,l1)*transl(0,0,0)*trotx(pi/2)
@@ -29,23 +29,3 @@ a=-py
 b=px
 q1sol1=atan2(a,-b)
 q1sol2=atan2(-a,b)
-%%
-izq2=inv(BtC)*inv(AtB)*noap
-izq2=simplify(izq2)
-der2=CtD
-der2=simplify(der2)
-ec2x=izq2(1,4)==der2(1,4)
-ec2y=izq2(2,4)==der2(2,4)
-ec2z=izq2(3,4)==der2(3,4)
-% Podemos continuar en simbolico o evaluar T original
-T=diap37.fkine([pi,pi/4,3.2])
-T=T.T
-a=-T(2,4)
-b=T(1,4)
-q1sol1=atan2(a,-b)
-q1sol2=atan2(-a,b)
-% Evaluando q1_sol1=pi
-q1=pi
-ec2x_q1_sol1=eval(ec2x)
-ec2x_q1_sol1=vpa(ec2x_q1_sol1)
-
