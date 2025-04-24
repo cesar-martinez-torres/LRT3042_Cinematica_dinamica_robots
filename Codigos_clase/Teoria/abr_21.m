@@ -37,6 +37,12 @@ der2=simplify(der2)
 ec2x=izq2(1,4)==der2(1,4)
 ec2y=izq2(2,4)==der2(2,4)
 ec2z=izq2(3,4)==der2(3,4)
+k1=px*cos(q1)
+k2=py*sin(q1)
+a1=k1+k2
+b1=pz-5
+q2_sol1=atan2(a1,-b1)
+q2_sol2=atan2(-a1,b1)
 % Podemos continuar en simbolico o evaluar T original
 T=diap37.fkine([pi,pi/4,3.2])
 T=T.T
@@ -44,8 +50,18 @@ a=-T(2,4)
 b=T(1,4)
 q1sol1=atan2(a,-b)
 q1sol2=atan2(-a,b)
-% Evaluando q1_sol1=pi
+%% Resolver q2
+px=T(1,4)
+py=T(2,4)
+pz=T(3,4)
 q1=pi
-ec2x_q1_sol1=eval(ec2x)
-ec2x_q1_sol1=vpa(ec2x_q1_sol1)
-
+k1=px*cos(q1)
+k2=py*sin(q1)
+a1=k1+k2
+b1=pz-5
+q1s1_q2s1=atan2(a1,-b1)
+q1=pi
+q2=q1s1_q2s1
+q1s1_q2s1_q3s1=eval(ec2z)
+q1s1_q2s1_q3s1=[q1 q2 -16/5]
+Ta=diap37.fkine(q1s1_q2s1_q3s1)
