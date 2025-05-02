@@ -54,27 +54,14 @@ q1sol2=atan2(-a,b)
 px=T(1,4)
 py=T(2,4)
 pz=T(3,4)
-q1=0
+q1=pi
 k1=px*cos(q1)
 k2=py*sin(q1)
 a1=k1+k2
 b1=pz-5
 q1s1_q2s1=atan2(a1,-b1)
-q1=0
-q2=-0.7854
+q1=pi
+q2=q1s1_q2s1
 q1s1_q2s1_q3s1=eval(ec2z)
 q1s1_q2s1_q3s1=[q1 q2 -16/5]
 Ta=diap37.fkine(q1s1_q2s1_q3s1)
-%% Crear sol
-sol1=[pi 0.7854 3.2]
-sol2=[0 -0.7854 3.2]
-Ta=diap37.fkine(sol1)
-ora=tr2rpy(Ta,'xyz')
-Tb=diap37.fkine(sol2)
-orb=tr2rpy(Tb,'xyz')
-figure
-diap37.plot(sol1)
-pause
-diap37.plot(sol2)
-
-
