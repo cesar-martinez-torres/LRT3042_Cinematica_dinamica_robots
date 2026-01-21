@@ -1,22 +1,79 @@
-# Formatos_LRT3042
-Codes and templates for the course LRT3042 Kinematics and Dynamics of Robots taught at the University of the Americas Puebla (UDLAP).
-# Introducción
-This repository contains the necessary formats for the Kinematics and Dynamics of Robots course offered at the University of the Americas Puebla.
+# 🤖 LRT3042 – Cinemática y Dinámica de Robots
 
-# Final Project Report Template (Formato_reporte_PF)
-## How to Compile?
+[🇲🇽 Español](#-español) | [🇬🇧 English](#-english)
 
-It is recommended to use Overleaf to compile the template.
+---
 
-The template contains different folders:
+## 🇲🇽 Español
 
-    bib: Includes the bibliography file bibliografia.bib; it is advisable to use a reference manager (JabRef, Zotero).
-    bst: Includes the file IEEEtran.bst, which is used to apply the citation style of IEEE transactions. DO NOT modify to maintain the requested format.
-    codigos: Folder to add the codes used during the project. It is NOT recommended to place the entire code in the document body; use appendices for that purpose.
-    Imagenes: Folder to place the images used in the document; it is recommended to use .eps or .png format.
+Repositorio oficial del curso **LRT3042: Cinemática y Dinámica de Robots**.
 
-The main.tex document is commented for better understanding.
+Aquí encontrarás los **códigos, ejemplos y materiales** desarrollados durante las  
+**clases teóricas y las sesiones de laboratorio** a lo largo del semestre.
 
-# Course code (Codigos_clase folder)
+---
 
-This folder will contain all the codes for the course, organized by units, and each .m file will be named according to the date on which the class was conducted.
+### 📂 Contenido del repositorio
+
+Este repositorio incluye, entre otros:
+
+- 🧮 Ejemplos y scripts vistos en **clase teórica**
+- 🔧 Códigos desarrollados en **laboratorio**
+- 💻 Material de apoyo para el estudio y la práctica
+
+El contenido se irá **actualizando conforme avance el curso**.
+
+---
+
+### 🎯 Objetivo
+
+El objetivo de este repositorio es servir como:
+
+- Referencia de los **ejemplos vistos en clase**
+- Apoyo para el **aprendizaje práctico**
+- Base para que los estudiantes **experimenten, modifiquen y comprendan** los conceptos del curso
+
+---
+
+### ⚠️ Nota para estudiantes
+
+Los códigos aquí presentados están pensados como **material académico**.  
+Se recomienda **leerlos, analizarlos y adaptarlos**, no solo ejecutarlos directamente.
+
+---
+
+## 🇬🇧 English
+
+Official repository for the course **LRT3042: Robot Kinematics and Dynamics**.
+
+This repository contains the **code, examples, and materials** developed during  
+**theoretical lectures and laboratory sessions** throughout the semester.
+
+---
+
+### 📂 Repository contents
+
+This repository includes, among others:
+
+- 🧮 Examples and scripts used in **theoretical lectures**
+- 🔧 Code developed during **laboratory sessions**
+- 💻 Supporting material for study and practice
+
+The content will be **updated as the course progresses**.
+
+---
+
+### 🎯 Objective
+
+The objective of this repository is to:
+
+- Serve as a reference for **in-class examples**
+- Support **hands-on learning**
+- Provide a base for students to **experiment, modify, and understand** the course concepts
+
+---
+
+### ⚠️ Note for students
+
+All codes provided in this repository are intended as **academic material**.  
+Students are encouraged to **read, analyze, and adapt** the code, not just run it.
