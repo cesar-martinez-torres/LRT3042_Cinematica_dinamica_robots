@@ -277,6 +277,3 @@ TSWLatexianTemp*
 
 # Matlab
 *.asv
-
-codigos_clase/Soluciones/
-generarSolucionesRobot.m
