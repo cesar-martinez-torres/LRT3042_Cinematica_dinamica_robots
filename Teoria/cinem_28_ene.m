@@ -18,5 +18,5 @@ plot_point3(wp4)
 plot3DLine(wp1,wp2)
 trplot(W,'frame','W','arrow')
 %% 2)
-syms aTw wTc aTb
+syms aTw wTc
 aTb=aTw*wTc*cTb% Matlab trata a aTw y wTc como escalares
