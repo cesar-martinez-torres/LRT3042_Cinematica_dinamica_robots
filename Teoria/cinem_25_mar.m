@@ -21,7 +21,20 @@ ec1=izq1(3,4)==der1(3,4)
 % Por identificacion en la ec4 de la tabla
 a1=-py
 b1=px
-
+q1sol1=atan2(a1,-b1)
+q1sol2=atan2(-a1,b1)
+%Segundo paso
+izq2=inv(bTc)*izq1
+izq2=simplify(izq2)
+der2=cTd
+ec2=izq2(1,4)==der2(1,4)
+ec3=izq2(3,4)==der2(3,4)
+u=px*cos(q1)
+v=py*sin(q1)
+a2=u+v
+b2=pz-2
+q2sol1=atan2(a2,-b2)
+q2sol2=atan2(-a2,b2)
 
 
 
