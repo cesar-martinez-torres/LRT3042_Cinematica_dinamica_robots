@@ -277,3 +277,16 @@ TSWLatexianTemp*
 
 # Matlab
 *.asv
+test.m
+test2.m
+test3.m
+
+# Apuntes privados
+test3_paso2_q2_privado.*
+Teoria/test3_paso2_q2_privado.*
+
+# Apuntes generados para entrega
+Desacoplo cinematico paso a paso.*
+Teoria/Desacoplo cinematico paso a paso.*
+!Desacoplo cinematico paso a paso.pdf
+!Teoria/Desacoplo cinematico paso a paso.pdf
